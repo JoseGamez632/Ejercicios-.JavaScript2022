@@ -1,21 +1,60 @@
-// esta es una prueba.
 
-var base=4;
-var altura=3;
+// EJERCISIO 1A
+/* let la, lb , lc, lh, resultadoP, resultadoA;
+const NUM=2;
+la = parseInt (prompt ("Lado A:"));
+lb = parseInt (prompt ("Lado B:"));
+lc = parseInt(prompt ("Lado C:"));
+lh = parseInt(prompt ("Lado H:"));
+
+resultadoP = la+lb+lc;
+resultadoA = lb*lh/NUM;
+
+document.write (resultadoP,' Perimetro y ', resultadoA, ' Area.'); */
+
+
+/////////////////////////////////////////////////////////////////////////////////
+
+
+//EJERCISIO 1B
+
+/* var a, b, resultadoP, resultadoA;
 const NUM=2;
 
-var area;
+a = parseInt(prompt('Lado A:'));
+b = parseInt(prompt('Lado B:'));
 
-area = base * altura / NUM;
-alert (area);
-console.log(area);
-document.write (area);
+resultadoP = NUM*(b+a);
+resultadoA = b*a;
 
-switch (key) {
-    case value:
-        
-        break;
+document.write (resultadoP,' Perimetro y ', resultadoA, ' Area.'); */
 
-    default:
-        break;
-}
+
+////////////////////////////////////////////////////////////////////////////////
+
+//EJERCISIO 1C
+
+/* var a = parseInt(prompt('Lado A:')), resultadoP, resultadoA;
+const NUM = 4;
+
+resultadoP = NUM * a;
+resultadoA = a * a;
+
+document.write (resultadoP,' Perimetro y ', resultadoA, ' Area.'); */
+
+/////////////////////////////////////////////////////////////////////////////////
+
+
+//EJERCISIO 1D
+
+/* var r, resultadoP, resultadoA;
+const PI=3.1416, NUM=2;
+
+r = parseInt(prompt('Lado R:'));
+
+resultadoP = PI * (NUM*r);
+resultadoA = PI * r *r;
+
+document.write (resultadoP,' Perimetro y ', resultadoA, ' Area.'); */
+
+/////////////////////////////////////////////////////////////////////////////////
