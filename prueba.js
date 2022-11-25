@@ -58,3 +58,6 @@ resultadoA = PI * r *r;
 document.write (resultadoP,' Perimetro y ', resultadoA, ' Area.'); */
 
 /////////////////////////////////////////////////////////////////////////////////
+
+
+Array 
