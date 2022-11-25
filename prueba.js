@@ -55,9 +55,9 @@ r = parseInt(prompt('Lado R:'));
 resultadoP = PI * (NUM*r);
 resultadoA = PI * r *r;
 
-document.write (resultadoP,' Perimetro y ', resultadoA, ' Area.'); */
+document.write (resultadoP,' Perimetro y ', resultadoA, ' Area.');  */
 
 /////////////////////////////////////////////////////////////////////////////////
 
-
-Array 
+document.write
+}
