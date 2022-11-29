@@ -55,9 +55,18 @@ r = parseInt(prompt('Lado R:'));
 resultadoP = PI * (NUM*r);
 resultadoA = PI * r *r;
 
-document.write (resultadoP,' Perimetro y ', resultadoA, ' Area.');  */
+document.write (resultadoP,' Perimetro y ', resultadoA, ' Area.'); */
 
 /////////////////////////////////////////////////////////////////////////////////
 
-document.write
+function NumAleatorio(min, max) {
+    return Math.floor(Math.random()*(max - min)) + min;
 }
+
+let array = [];
+
+for (let i = 0; i = 9; i++) {
+    array.push(NumAleatorio(1, 100));
+}
+
+document.write(array);
