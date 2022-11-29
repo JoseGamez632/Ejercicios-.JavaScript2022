@@ -65,8 +65,10 @@ function NumAleatorio(min, max) {
 
 let array = [];
 
-for (let i = 0; i = 9; i++) {
+for (let i = 0; i <= 9; i++) {
     array.push(NumAleatorio(1, 100));
 }
 
 document.write(array);
+
+document.write(array)
