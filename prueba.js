@@ -64,23 +64,33 @@ function NumAleatorio(min, max) {
 }
 
 let array = [];
-
+//llenar array
 for (let i = 0; i <= 9; i++) {
     array.push(NumAleatorio(1, 100));
 }
-
 document.write(array);
+//Menores de edad
+const MenorEdad = array.filter(Xnum => Xnum <= 18);
+document.write("<br>",'Tenemos ', MenorEdad.length, ' menores de edad de ',MenorEdad, ' años.')
 
-const primeMay = array.find( elemento => elemento > 49 )
+//Mayores de edad
 
-document.write(" El primero mayor es ,", primeMay);
+const MayorEdad = array.filter(Xnum => Xnum >= 18);
+document.write("<br>",'Tenemos ', MayorEdad.length, ' mayores de edad de ',MayorEdad, ' años.')
 
+//Edad mayor y menor
 
-for (let i = 0; i <= 9; i++) {
-    if (array ) {
-        
+    let Min = array[0];
+    let Max = array[0];
+
+    for (let i = 0; i < array.length; i++) {
+        if (Min > array[i]) {
+            Min = array[i]
+        }
+        if (Max < array[i]) {
+            Max = array[i]
+        }
     }
+
+    document.write('<br>','La persona con menor edad tiene ',Min,' años y la de mayor edad tiene ', Max, ' años.');
     
-}
-
-
