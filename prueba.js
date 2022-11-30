@@ -63,20 +63,30 @@ function NumAleatorio(min, max) {
     return Math.floor(Math.random()*(max - min)) + min;
 }
 
-let array = [];
+/* let array = [];
 //llenar array
 for (let i = 0; i <= 9; i++) {
     array.push(NumAleatorio(1, 100));
 }
+document.write(array); */
+
+let array = [];
+
+for (let i = 0; i <= 9; i++) {
+    array[i] = parseInt(prompt('Digita las edades de 10 personas entre los 1 y 120 años.'));
+    
+}
+
 document.write(array);
+
 //Menores de edad
 const MenorEdad = array.filter(Xnum => Xnum <= 18);
-document.write("<br>",'Tenemos ', MenorEdad.length, ' menores de edad de ',MenorEdad, ' años.')
+document.write("<br>",' • Tenemos ', MenorEdad.length, ' menores de edad de ',MenorEdad, ' años.')
 
 //Mayores de edad
 
 const MayorEdad = array.filter(Xnum => Xnum >= 18);
-document.write("<br>",'Tenemos ', MayorEdad.length, ' mayores de edad de ',MayorEdad, ' años.')
+document.write("<br>",'• Tenemos ', MayorEdad.length, ' mayores de edad de ',MayorEdad, ' años.')
 
 //Edad mayor y menor
 
@@ -92,5 +102,20 @@ document.write("<br>",'Tenemos ', MayorEdad.length, ' mayores de edad de ',Mayor
         }
     }
 
-    document.write('<br>','La persona con menor edad tiene ',Min,' años y la de mayor edad tiene ', Max, ' años.');
+    document.write('<br>','• La persona con menor edad tiene ',Min,' años y la de mayor edad tiene ', Max, ' años.');
     
+//Adultos mayores (mas de 60 años)
+
+const AdultoMayor = array.filter(AdulM => AdulM >= 60);
+document.write('<br>','• Tenemos una cantidad de ',AdultoMayor.length,' adultos mayores de 60 años.');
+    
+//Promedio edad
+
+let acomulado = 0;
+for (let i = 0; i < array.length; i++) {
+    acomulado += array[i];
+    
+}
+document.write('<br>','• El promedio de edades es de ',acomulado / array.length, 'años.');
+
+
