@@ -71,4 +71,16 @@ for (let i = 0; i <= 9; i++) {
 
 document.write(array);
 
-document.write(array)
+const primeMay = array.find( elemento => elemento > 49 )
+
+document.write(" El primero mayor es ,", primeMay);
+
+
+for (let i = 0; i <= 9; i++) {
+    if (array ) {
+        
+    }
+    
+}
+
+
