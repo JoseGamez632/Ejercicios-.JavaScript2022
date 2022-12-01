@@ -1,5 +1,5 @@
 
-// EJERCISIO 1A
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////// EJERCISIO 1A
 /* let la, lb , lc, lh, resultadoP, resultadoA;
 const NUM=2;
 la = parseInt (prompt ("Lado A:"));
@@ -16,7 +16,7 @@ document.write (resultadoP,' Perimetro y ', resultadoA, ' Area.'); */
 /////////////////////////////////////////////////////////////////////////////////
 
 
-//EJERCISIO 1B
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////EJERCISIO 1B
 
 /* var a, b, resultadoP, resultadoA;
 const NUM=2;
@@ -32,7 +32,7 @@ document.write (resultadoP,' Perimetro y ', resultadoA, ' Area.'); */
 
 ////////////////////////////////////////////////////////////////////////////////
 
-//EJERCISIO 1C
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////EJERCISIO 1C
 
 /* var a = parseInt(prompt('Lado A:')), resultadoP, resultadoA;
 const NUM = 4;
@@ -59,22 +59,23 @@ document.write (resultadoP,' Perimetro y ', resultadoA, ' Area.'); */
 
 /////////////////////////////////////////////////////////////////////////////////
 
-function NumAleatorio(min, max) {
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////EJERCISIO 2
+
+/* function NumAleatorio(min, max) {
     return Math.floor(Math.random()*(max - min)) + min;
 }
 
-/* let array = [];
+/let array = [];
 //llenar array
 for (let i = 0; i <= 9; i++) {
     array.push(NumAleatorio(1, 100));
 }
 document.write(array); */
 
-let array = [];
+/* let array = [];
 
 for (let i = 0; i <= 9; i++) {
     array[i] = parseInt(prompt('Digita las edades de 10 personas entre los 1 y 120 años.'));
-    
 }
 
 document.write(array);
@@ -116,6 +117,32 @@ for (let i = 0; i < array.length; i++) {
     acomulado += array[i];
     
 }
-document.write('<br>','• El promedio de edades es de ',acomulado / array.length, 'años.');
+document.write('<br>','• El promedio de edades es de ',acomulado / array.length, 'años.'); */
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////EJERCISIO 3
 
+function NumAleatorio(min, max) {
+    return Math.floor(Math.random()*(max - min)) + min;
+}
+let array1 = []; 
+let array2 = [];
+
+for (let i = 0; i < 5; i++) {
+    array1.push(NumAleatorio(1,50));
+    array2.push(NumAleatorio(1,50));
+}
+document.write(array1,'////',array2,'----',(array1.length+array2.length));
+
+let ArrayCombinado = [array1,array2];
+
+ArrayCombinado.sort((a, b) => {
+    if (a == b) {
+        return 0;
+    }
+    if (a < b) {
+        return -1;    
+    }
+    return 1;
+});
+
+document.write('<br>',ArrayCombinado)
