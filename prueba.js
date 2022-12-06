@@ -65,12 +65,12 @@ document.write (resultadoP,' Perimetro y ', resultadoA, ' Area.'); */
     return Math.floor(Math.random()*(max - min)) + min;
 }
 
-/let array = [];
+let array = [];
 //llenar array
 for (let i = 0; i <= 9; i++) {
     array.push(NumAleatorio(1, 100));
 }
-document.write(array); */
+document.write(array);  */
 
 /* let array = [];
 
@@ -78,8 +78,8 @@ for (let i = 0; i <= 9; i++) {
     array[i] = parseInt(prompt('Digita las edades de 10 personas entre los 1 y 120 años.'));
 }
 
-document.write(array);
-
+document.write(array); */
+/* 
 //Menores de edad
 const MenorEdad = array.filter(Xnum => Xnum <= 18);
 document.write("<br>",' • Tenemos ', MenorEdad.length, ' menores de edad de ',MenorEdad, ' años.')
@@ -117,10 +117,10 @@ for (let i = 0; i < array.length; i++) {
     acomulado += array[i];
     
 }
-document.write('<br>','• El promedio de edades es de ',acomulado / array.length, 'años.'); */
+document.write('<br>','• El promedio de edades es de ',acomulado / array.length, 'años.');  */
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////EJERCISIO 3
-
+/* 
 function NumAleatorio(min, max) {
     return Math.floor(Math.random()*(max - min)) + min;
 }
@@ -131,18 +131,19 @@ for (let i = 0; i < 5; i++) {
     array1.push(NumAleatorio(1,50));
     array2.push(NumAleatorio(1,50));
 }
-document.write(array1,'////',array2,'----',(array1.length+array2.length));
+document.write('• Array 1 ingresado: ',array1,'<br>','• Array 2 ingresado: ',array2,'<br>');
 
 let ArrayCombinado = [array1,array2];
 
-ArrayCombinado.sort((a, b) => {
-    if (a == b) {
-        return 0;
-    }
-    if (a < b) {
-        return -1;    
-    }
-    return 1;
-});
+array1.sort(COMPARAR);
+array2.sort(COMPARAR);
+ArrayCombinado.sort(COMPARAR);
 
-document.write('<br>',ArrayCombinado)
+function COMPARAR(a,b) {
+    return a-b
+}
+
+document.write("<br>", '• El Array 1 ordenado es el siguiente: ', array1, '<br>', '• El Array 2 ordenado es el siguiente: ', array2,'<br>', '• La convinación de los 2 Arrays ordenados es el siguiente ',ArrayCombinado);
+ */
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////EJERCISIO 4
+
