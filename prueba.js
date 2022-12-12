@@ -147,3 +147,51 @@ document.write("<br>", '• El Array 1 ordenado es el siguiente: ', array1, '<br
  */
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////EJERCISIO 4
 
+
+function NumAleatorio(min, max) {
+    return Math.floor(Math.random()*(max - min)) + min;
+}
+
+
+let arrayEmisora = [];
+
+for (let i = 0; i < 6; i++) {
+    arrayEmisora.push({nombre: prompt('Digita tu nombre'), cedula: prompt('Digita tu cedula sin puntos'), fechaNacimiento: prompt('Digita tu fecha de nacimiento "dd/mm/aaaa"'), 
+    correo: prompt('Digita tu correo electronico'), ciudadResidencia: prompt('Donde vives actualmente'), ciudadOrigen: prompt('Donde nacio'), 
+    artistaFavorito: prompt('Digita tu artista favorito'), 
+    cancionesFav1: prompt('Digita tu cancion favorito #1'), cancionesFav2: prompt('Digita tu cancion favorito #2'), cancionesFav3: prompt('Digita tu cancion favorito #3')});
+    
+}
+
+for (let i = 0; i < 6; i++) {
+    document.write('Puesto #',i,' ',JSON.stringify(arrayEmisora[i]),'<br>');
+    
+}
+
+/* let ganador = NumAleatorio(0,5) */
+
+
+let ganadorConcurso = arrayEmisora.map((arrayEmisora) => 'El gran ganador fue ' + arrayEmisora[1].nombre + ' de la ciudad de ' + arrayEmisora.ciudadOrigen[1] + ' idenificado con cedula numero' + arrayEmisora.cedula[1]);
+
+document.write(ganadorConcurso)
+
+console.log(arrayEmisora);
+document.write('<br>','EL GANADOR ES EL CONCURSANTE CON EL PUESTO #',ganador,'<br>',JSON.stringify(arrayEmisora[ganador]));
+
+///////////////////////////prueba
+
+/* let ArrarP = [
+    {nombre: 'camilo', edad: 20 },
+    {nombre: 'juan', edad: 54 },
+    {nombre: 'pedro', edad: 35 },
+    {nombre: 'sebas', edad: 12 },
+]
+
+document.write(JSON.stringify(ArrarP[2],))
+
+
+let todasPersonas = ArrarP.map(
+    (ArrarP) => ArrarP.nombre + ' con una edad de ' + ArrarP.edad + ' anos.'
+);
+
+alert(todasPersonas.join(' - ')); */
