@@ -47,7 +47,7 @@ document.write (resultadoP,' Perimetro y ', resultadoA, ' Area.'); */
 
 //EJERCISIO 1D
 
-/* var r, resultadoP, resultadoA;
+var r, resultadoP, resultadoA;
 const PI=3.1416, NUM=2;
 
 r = parseInt(prompt('Lado R:'));
@@ -55,7 +55,7 @@ r = parseInt(prompt('Lado R:'));
 resultadoP = PI * (NUM*r);
 resultadoA = PI * r *r;
 
-document.write (resultadoP,' Perimetro y ', resultadoA, ' Area.'); */
+document.write (resultadoP,' Perimetro y ', resultadoA, ' Area.');
 
 /////////////////////////////////////////////////////////////////////////////////
 
@@ -63,9 +63,9 @@ document.write (resultadoP,' Perimetro y ', resultadoA, ' Area.'); */
 
 /* function NumAleatorio(min, max) {
     return Math.floor(Math.random()*(max - min)) + min;
-}
+} */
 
-let array = [];
+/* let array = [];
 //llenar array
 for (let i = 0; i <= 9; i++) {
     array.push(NumAleatorio(1, 100));
@@ -78,8 +78,8 @@ for (let i = 0; i <= 9; i++) {
     array[i] = parseInt(prompt('Digita las edades de 10 personas entre los 1 y 120 años.'));
 }
 
-document.write(array); */
-/* 
+document.write(array); 
+
 //Menores de edad
 const MenorEdad = array.filter(Xnum => Xnum <= 18);
 document.write("<br>",' • Tenemos ', MenorEdad.length, ' menores de edad de ',MenorEdad, ' años.')
@@ -120,8 +120,8 @@ for (let i = 0; i < array.length; i++) {
 document.write('<br>','• El promedio de edades es de ',acomulado / array.length, 'años.');  */
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////EJERCISIO 3
-/* 
-function NumAleatorio(min, max) {
+
+/* function NumAleatorio(min, max) {
     return Math.floor(Math.random()*(max - min)) + min;
 }
 let array1 = []; 
@@ -130,7 +130,7 @@ let array2 = [];
 for (let i = 0; i < 5; i++) {
     array1.push(NumAleatorio(1,50));
     array2.push(NumAleatorio(1,50));
-}
+} 
 document.write('• Array 1 ingresado: ',array1,'<br>','• Array 2 ingresado: ',array2,'<br>');
 
 let ArrayCombinado = [array1,array2];
@@ -143,12 +143,13 @@ function COMPARAR(a,b) {
     return a-b
 }
 
-document.write("<br>", '• El Array 1 ordenado es el siguiente: ', array1, '<br>', '• El Array 2 ordenado es el siguiente: ', array2,'<br>', '• La convinación de los 2 Arrays ordenados es el siguiente ',ArrayCombinado);
- */
+document.write("<br>", '• El Array 1 ordenado es el siguiente: ', array1, '<br>', '• El Array 2 ordenado es el siguiente: ', 
+array2,'<br>', '• La convinación de los 2 Arrays ordenados es el siguiente ',ArrayCombinado); */
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////EJERCISIO 4
 
 
-function NumAleatorio(min, max) {
+/* function NumAleatorio(min, max) {
     return Math.floor(Math.random()*(max - min)) + min;
 }
 
@@ -166,17 +167,11 @@ for (let i = 0; i < 6; i++) {
 for (let i = 0; i < 6; i++) {
     document.write('Puesto #',i,' ',JSON.stringify(arrayEmisora[i]),'<br>');
     
-}
+} 
 
-/* let ganador = NumAleatorio(0,5) */
+ let ganador = NumAleatorio(0,5)
 
-
-let ganadorConcurso = arrayEmisora.map((arrayEmisora) => 'El gran ganador fue ' + arrayEmisora[1].nombre + ' de la ciudad de ' + arrayEmisora.ciudadOrigen[1] + ' idenificado con cedula numero' + arrayEmisora.cedula[1]);
-
-document.write(ganadorConcurso)
-
-console.log(arrayEmisora);
-document.write('<br>','EL GANADOR ES EL CONCURSANTE CON EL PUESTO #',ganador,'<br>',JSON.stringify(arrayEmisora[ganador]));
+document.write('<br>','EL GANADOR ES EL CONCURSANTE CON EL PUESTO #',ganador,'<br>',JSON.stringify(arrayEmisora[ganador]));  */
 
 ///////////////////////////prueba
 
